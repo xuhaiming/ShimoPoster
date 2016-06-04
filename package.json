@@ -1,0 +1,34 @@
+{
+  "name": "shimo-poster",
+  "version": "1.0.0",
+  "description": "An application which allow user or organization to post Shimo document to Github Pages",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/xuhaiming/ShimoPoster.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/xuhaiming/ShimoPoster/issues"
+  },
+  "homepage": "https://github.com/xuhaiming/ShimoPoster#readme",
+  "dependencies": {
+    "express": "^4.13.4",
+    "react": "^15.1.0",
+    "react-dom": "^15.1.0",
+    "react-router": "^2.4.1"
+  },
+  "devDependencies": {
+    "babel-core": "^6.9.1",
+    "babel-loader": "^6.2.4",
+    "babel-preset-es2015": "^6.9.0",
+    "babel-preset-react": "^6.5.0",
+    "mongoose": "^4.4.19",
+    "shimo": "^1.4.0",
+    "webpack": "^1.13.1"
+  }
+}
