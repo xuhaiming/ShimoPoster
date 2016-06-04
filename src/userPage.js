@@ -3,8 +3,8 @@
 var React = require('react');
 var ReactDOM = require('react-dom');
 
-var UserPageContainer = React.createClass({
-  render: function() {
+class UserPageContainer extends React.Component {
+  render() {
     return (
       <div>
         <section id="sidebar">
@@ -196,7 +196,7 @@ var UserPageContainer = React.createClass({
       </div>
     );
   }
-});
+}
 
 ReactDOM.render(
   <UserPageContainer />,

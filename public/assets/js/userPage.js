@@ -49,412 +49,151 @@
 
 	'use strict';
 	
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+	
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+	
+	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+	
+	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+	
 	var React = __webpack_require__(/*! react */ 1);
 	var ReactDOM = __webpack_require__(/*! react-dom */ 38);
 	
-	var UserPageContainer = React.createClass({
-	  displayName: 'UserPageContainer',
+	var UserPageContainer = function (_React$Component) {
+	  _inherits(UserPageContainer, _React$Component);
 	
-	  render: function render() {
-	    return React.createElement(
-	      'div',
-	      null,
-	      React.createElement(
-	        'section',
-	        { id: 'sidebar' },
+	  function UserPageContainer() {
+	    _classCallCheck(this, UserPageContainer);
+	
+	    return _possibleConstructorReturn(this, Object.getPrototypeOf(UserPageContainer).apply(this, arguments));
+	  }
+	
+	  _createClass(UserPageContainer, [{
+	    key: 'render',
+	    value: function render() {
+	      return React.createElement(
+	        'div',
+	        null,
+	        React.createElement(
+	          'section',
+	          { id: 'sidebar' },
+	          React.createElement(
+	            'div',
+	            { className: 'inner' },
+	            React.createElement(
+	              'nav',
+	              null,
+	              React.createElement(
+	                'ul',
+	                null,
+	                React.createElement(
+	                  'li',
+	                  null,
+	                  React.createElement(
+	                    'a',
+	                    { href: '#intro' },
+	                    'Welcome'
+	                  )
+	                ),
+	                React.createElement(
+	                  'li',
+	                  null,
+	                  React.createElement(
+	                    'a',
+	                    { href: '#one' },
+	                    'Who we are'
+	                  )
+	                ),
+	                React.createElement(
+	                  'li',
+	                  null,
+	                  React.createElement(
+	                    'a',
+	                    { href: '#two' },
+	                    'What we do'
+	                  )
+	                ),
+	                React.createElement(
+	                  'li',
+	                  null,
+	                  React.createElement(
+	                    'a',
+	                    { href: '#three' },
+	                    'Get in touch'
+	                  )
+	                )
+	              )
+	            )
+	          )
+	        ),
 	        React.createElement(
 	          'div',
-	          { className: 'inner' },
+	          { id: 'wrapper' },
 	          React.createElement(
-	            'nav',
-	            null,
+	            'section',
+	            { id: 'intro', className: 'wrapper style1 fullscreen fade-up' },
 	            React.createElement(
-	              'ul',
-	              null,
+	              'div',
+	              { className: 'inner' },
 	              React.createElement(
-	                'li',
+	                'h1',
 	                null,
-	                React.createElement(
-	                  'a',
-	                  { href: '#intro' },
-	                  'Welcome'
-	                )
+	                'Hyperspace'
 	              ),
 	              React.createElement(
-	                'li',
+	                'p',
 	                null,
+	                'Just another fine responsive site template designed by ',
 	                React.createElement(
 	                  'a',
-	                  { href: '#one' },
-	                  'Who we are'
-	                )
+	                  { href: 'http://html5up.net' },
+	                  'HTML5 UP'
+	                ),
+	                React.createElement('br', null),
+	                'and released for free under. '
 	              ),
 	              React.createElement(
-	                'li',
-	                null,
+	                'ul',
+	                { className: 'actions' },
 	                React.createElement(
-	                  'a',
-	                  { href: '#two' },
-	                  'What we do'
-	                )
-	              ),
-	              React.createElement(
-	                'li',
-	                null,
-	                React.createElement(
-	                  'a',
-	                  { href: '#three' },
-	                  'Get in touch'
+	                  'li',
+	                  null,
+	                  React.createElement(
+	                    'a',
+	                    { href: '#one', className: 'button scrolly' },
+	                    'Learn more'
+	                  )
 	                )
 	              )
 	            )
-	          )
-	        )
-	      ),
-	      React.createElement(
-	        'div',
-	        { id: 'wrapper' },
-	        React.createElement(
-	          'section',
-	          { id: 'intro', className: 'wrapper style1 fullscreen fade-up' },
+	          ),
 	          React.createElement(
-	            'div',
-	            { className: 'inner' },
+	            'section',
+	            { id: 'one', className: 'wrapper style2 spotlights' },
 	            React.createElement(
-	              'h1',
+	              'section',
 	              null,
-	              'Hyperspace'
-	            ),
-	            React.createElement(
-	              'p',
-	              null,
-	              'Just another fine responsive site template designed by ',
 	              React.createElement(
 	                'a',
-	                { href: 'http://html5up.net' },
-	                'HTML5 UP'
+	                { href: '#', className: 'image' },
+	                React.createElement('img', { src: 'images/pic01.jpg', alt: '', 'data-position': 'center center' })
 	              ),
-	              React.createElement('br', null),
-	              'and released for free under. '
-	            ),
-	            React.createElement(
-	              'ul',
-	              { className: 'actions' },
-	              React.createElement(
-	                'li',
-	                null,
-	                React.createElement(
-	                  'a',
-	                  { href: '#one', className: 'button scrolly' },
-	                  'Learn more'
-	                )
-	              )
-	            )
-	          )
-	        ),
-	        React.createElement(
-	          'section',
-	          { id: 'one', className: 'wrapper style2 spotlights' },
-	          React.createElement(
-	            'section',
-	            null,
-	            React.createElement(
-	              'a',
-	              { href: '#', className: 'image' },
-	              React.createElement('img', { src: 'images/pic01.jpg', alt: '', 'data-position': 'center center' })
-	            ),
-	            React.createElement(
-	              'div',
-	              { className: 'content' },
 	              React.createElement(
 	                'div',
-	                { className: 'inner' },
+	                { className: 'content' },
 	                React.createElement(
-	                  'h2',
-	                  null,
-	                  'Sed ipsum dolor'
-	                ),
-	                React.createElement(
-	                  'p',
-	                  null,
-	                  'Phasellus convallis elit id ullamcorper pulvinar. Duis aliquam turpis mauris, eu ultricies erat malesuada quis. Aliquam dapibus.'
-	                ),
-	                React.createElement(
-	                  'ul',
-	                  { className: 'actions' },
+	                  'div',
+	                  { className: 'inner' },
 	                  React.createElement(
-	                    'li',
+	                    'h2',
 	                    null,
-	                    React.createElement(
-	                      'a',
-	                      { href: '#', className: 'button' },
-	                      'Learn more'
-	                    )
-	                  )
-	                )
-	              )
-	            )
-	          ),
-	          React.createElement(
-	            'section',
-	            null,
-	            React.createElement(
-	              'a',
-	              { href: '#', className: 'image' },
-	              React.createElement('img', { src: 'images/pic02.jpg', alt: '', 'data-position': 'top center' })
-	            ),
-	            React.createElement(
-	              'div',
-	              { className: 'content' },
-	              React.createElement(
-	                'div',
-	                { className: 'inner' },
-	                React.createElement(
-	                  'h2',
-	                  null,
-	                  'Feugiat consequat'
-	                ),
-	                React.createElement(
-	                  'p',
-	                  null,
-	                  'Phasellus convallis elit id ullamcorper pulvinar. Duis aliquam turpis mauris, eu ultricies erat malesuada quis. Aliquam dapibus.'
-	                ),
-	                React.createElement(
-	                  'ul',
-	                  { className: 'actions' },
-	                  React.createElement(
-	                    'li',
-	                    null,
-	                    React.createElement(
-	                      'a',
-	                      { href: '#', className: 'button' },
-	                      'Learn more'
-	                    )
-	                  )
-	                )
-	              )
-	            )
-	          ),
-	          React.createElement(
-	            'section',
-	            null,
-	            React.createElement(
-	              'a',
-	              { href: '#', className: 'image' },
-	              React.createElement('img', { src: 'images/pic03.jpg', alt: '', 'data-position': '25% 25%' })
-	            ),
-	            React.createElement(
-	              'div',
-	              { className: 'content' },
-	              React.createElement(
-	                'div',
-	                { className: 'inner' },
-	                React.createElement(
-	                  'h2',
-	                  null,
-	                  'Ultricies aliquam'
-	                ),
-	                React.createElement(
-	                  'p',
-	                  null,
-	                  'Phasellus convallis elit id ullamcorper pulvinar. Duis aliquam turpis mauris, eu ultricies erat malesuada quis. Aliquam dapibus.'
-	                ),
-	                React.createElement(
-	                  'ul',
-	                  { className: 'actions' },
-	                  React.createElement(
-	                    'li',
-	                    null,
-	                    React.createElement(
-	                      'a',
-	                      { href: '#', className: 'button' },
-	                      'Learn more'
-	                    )
-	                  )
-	                )
-	              )
-	            )
-	          )
-	        ),
-	        React.createElement(
-	          'section',
-	          { id: 'two', className: 'wrapper style3 fade-up' },
-	          React.createElement(
-	            'div',
-	            { className: 'inner' },
-	            React.createElement(
-	              'h2',
-	              null,
-	              'What we do'
-	            ),
-	            React.createElement(
-	              'p',
-	              null,
-	              'Phasellus convallis elit id ullamcorper pulvinar. Duis aliquam turpis mauris, eu ultricies erat malesuada quis. Aliquam dapibus, lacus eget hendrerit bibendum, urna est aliquam sem, sit amet imperdiet est velit quis lorem.'
-	            ),
-	            React.createElement(
-	              'div',
-	              { className: 'features' },
-	              React.createElement(
-	                'section',
-	                null,
-	                React.createElement('span', { className: 'icon major fa-code' }),
-	                React.createElement(
-	                  'h3',
-	                  null,
-	                  'Lorem ipsum amet'
-	                ),
-	                React.createElement(
-	                  'p',
-	                  null,
-	                  'Phasellus convallis elit id ullam corper amet et pulvinar. Duis aliquam turpis mauris, sed ultricies erat dapibus.'
-	                )
-	              ),
-	              React.createElement(
-	                'section',
-	                null,
-	                React.createElement('span', { className: 'icon major fa-lock' }),
-	                React.createElement(
-	                  'h3',
-	                  null,
-	                  'Aliquam sed nullam'
-	                ),
-	                React.createElement(
-	                  'p',
-	                  null,
-	                  'Phasellus convallis elit id ullam corper amet et pulvinar. Duis aliquam turpis mauris, sed ultricies erat dapibus.'
-	                )
-	              ),
-	              React.createElement(
-	                'section',
-	                null,
-	                React.createElement('span', { className: 'icon major fa-cog' }),
-	                React.createElement(
-	                  'h3',
-	                  null,
-	                  'Sed erat ullam corper'
-	                ),
-	                React.createElement(
-	                  'p',
-	                  null,
-	                  'Phasellus convallis elit id ullam corper amet et pulvinar. Duis aliquam turpis mauris, sed ultricies erat dapibus.'
-	                )
-	              ),
-	              React.createElement(
-	                'section',
-	                null,
-	                React.createElement('span', { className: 'icon major fa-desktop' }),
-	                React.createElement(
-	                  'h3',
-	                  null,
-	                  'Veroeros quis lorem'
-	                ),
-	                React.createElement(
-	                  'p',
-	                  null,
-	                  'Phasellus convallis elit id ullam corper amet et pulvinar. Duis aliquam turpis mauris, sed ultricies erat dapibus.'
-	                )
-	              ),
-	              React.createElement(
-	                'section',
-	                null,
-	                React.createElement('span', { className: 'icon major fa-chain' }),
-	                React.createElement(
-	                  'h3',
-	                  null,
-	                  'Urna quis bibendum'
-	                ),
-	                React.createElement(
-	                  'p',
-	                  null,
-	                  'Phasellus convallis elit id ullam corper amet et pulvinar. Duis aliquam turpis mauris, sed ultricies erat dapibus.'
-	                )
-	              ),
-	              React.createElement(
-	                'section',
-	                null,
-	                React.createElement('span', { className: 'icon major fa-diamond' }),
-	                React.createElement(
-	                  'h3',
-	                  null,
-	                  'Aliquam urna dapibus'
-	                ),
-	                React.createElement(
-	                  'p',
-	                  null,
-	                  'Phasellus convallis elit id ullam corper amet et pulvinar. Duis aliquam turpis mauris, sed ultricies erat dapibus.'
-	                )
-	              )
-	            ),
-	            React.createElement(
-	              'ul',
-	              { className: 'actions' },
-	              React.createElement(
-	                'li',
-	                null,
-	                React.createElement(
-	                  'a',
-	                  { href: '#', className: 'button' },
-	                  'Learn more'
-	                )
-	              )
-	            )
-	          )
-	        ),
-	        React.createElement(
-	          'section',
-	          { id: 'three', className: 'wrapper style1 fade-up' },
-	          React.createElement(
-	            'div',
-	            { className: 'inner' },
-	            React.createElement(
-	              'h2',
-	              null,
-	              'Get in touch'
-	            ),
-	            React.createElement(
-	              'p',
-	              null,
-	              'Phasellus convallis elit id ullamcorper pulvinar. Duis aliquam turpis mauris, eu ultricies erat malesuada quis. Aliquam dapibus, lacus eget hendrerit bibendum, urna est aliquam sem, sit amet imperdiet est velit quis lorem.'
-	            ),
-	            React.createElement(
-	              'div',
-	              { className: 'split style1' },
-	              React.createElement(
-	                'section',
-	                null,
-	                React.createElement(
-	                  'form',
-	                  { method: 'post', action: '#' },
-	                  React.createElement(
-	                    'div',
-	                    { className: 'field half first' },
-	                    React.createElement(
-	                      'label',
-	                      { 'for': 'name' },
-	                      'Name'
-	                    ),
-	                    React.createElement('input', { type: 'text', name: 'name', id: 'name' })
+	                    'Sed ipsum dolor'
 	                  ),
 	                  React.createElement(
-	                    'div',
-	                    { className: 'field half' },
-	                    React.createElement(
-	                      'label',
-	                      { 'for': 'email' },
-	                      'Email'
-	                    ),
-	                    React.createElement('input', { type: 'text', name: 'email', id: 'email' })
-	                  ),
-	                  React.createElement(
-	                    'div',
-	                    { className: 'field' },
-	                    React.createElement(
-	                      'label',
-	                      { 'for': 'message' },
-	                      'Message'
-	                    ),
-	                    React.createElement('textarea', { name: 'message', id: 'message', rows: '5' })
+	                    'p',
+	                    null,
+	                    'Phasellus convallis elit id ullamcorper pulvinar. Duis aliquam turpis mauris, eu ultricies erat malesuada quis. Aliquam dapibus.'
 	                  ),
 	                  React.createElement(
 	                    'ul',
@@ -464,138 +203,416 @@
 	                      null,
 	                      React.createElement(
 	                        'a',
-	                        { href: '', className: 'button submit' },
-	                        'Send Message'
+	                        { href: '#', className: 'button' },
+	                        'Learn more'
 	                      )
 	                    )
+	                  )
+	                )
+	              )
+	            ),
+	            React.createElement(
+	              'section',
+	              null,
+	              React.createElement(
+	                'a',
+	                { href: '#', className: 'image' },
+	                React.createElement('img', { src: 'images/pic02.jpg', alt: '', 'data-position': 'top center' })
+	              ),
+	              React.createElement(
+	                'div',
+	                { className: 'content' },
+	                React.createElement(
+	                  'div',
+	                  { className: 'inner' },
+	                  React.createElement(
+	                    'h2',
+	                    null,
+	                    'Feugiat consequat'
+	                  ),
+	                  React.createElement(
+	                    'p',
+	                    null,
+	                    'Phasellus convallis elit id ullamcorper pulvinar. Duis aliquam turpis mauris, eu ultricies erat malesuada quis. Aliquam dapibus.'
+	                  ),
+	                  React.createElement(
+	                    'ul',
+	                    { className: 'actions' },
+	                    React.createElement(
+	                      'li',
+	                      null,
+	                      React.createElement(
+	                        'a',
+	                        { href: '#', className: 'button' },
+	                        'Learn more'
+	                      )
+	                    )
+	                  )
+	                )
+	              )
+	            ),
+	            React.createElement(
+	              'section',
+	              null,
+	              React.createElement(
+	                'a',
+	                { href: '#', className: 'image' },
+	                React.createElement('img', { src: 'images/pic03.jpg', alt: '', 'data-position': '25% 25%' })
+	              ),
+	              React.createElement(
+	                'div',
+	                { className: 'content' },
+	                React.createElement(
+	                  'div',
+	                  { className: 'inner' },
+	                  React.createElement(
+	                    'h2',
+	                    null,
+	                    'Ultricies aliquam'
+	                  ),
+	                  React.createElement(
+	                    'p',
+	                    null,
+	                    'Phasellus convallis elit id ullamcorper pulvinar. Duis aliquam turpis mauris, eu ultricies erat malesuada quis. Aliquam dapibus.'
+	                  ),
+	                  React.createElement(
+	                    'ul',
+	                    { className: 'actions' },
+	                    React.createElement(
+	                      'li',
+	                      null,
+	                      React.createElement(
+	                        'a',
+	                        { href: '#', className: 'button' },
+	                        'Learn more'
+	                      )
+	                    )
+	                  )
+	                )
+	              )
+	            )
+	          ),
+	          React.createElement(
+	            'section',
+	            { id: 'two', className: 'wrapper style3 fade-up' },
+	            React.createElement(
+	              'div',
+	              { className: 'inner' },
+	              React.createElement(
+	                'h2',
+	                null,
+	                'What we do'
+	              ),
+	              React.createElement(
+	                'p',
+	                null,
+	                'Phasellus convallis elit id ullamcorper pulvinar. Duis aliquam turpis mauris, eu ultricies erat malesuada quis. Aliquam dapibus, lacus eget hendrerit bibendum, urna est aliquam sem, sit amet imperdiet est velit quis lorem.'
+	              ),
+	              React.createElement(
+	                'div',
+	                { className: 'features' },
+	                React.createElement(
+	                  'section',
+	                  null,
+	                  React.createElement('span', { className: 'icon major fa-code' }),
+	                  React.createElement(
+	                    'h3',
+	                    null,
+	                    'Lorem ipsum amet'
+	                  ),
+	                  React.createElement(
+	                    'p',
+	                    null,
+	                    'Phasellus convallis elit id ullam corper amet et pulvinar. Duis aliquam turpis mauris, sed ultricies erat dapibus.'
+	                  )
+	                ),
+	                React.createElement(
+	                  'section',
+	                  null,
+	                  React.createElement('span', { className: 'icon major fa-lock' }),
+	                  React.createElement(
+	                    'h3',
+	                    null,
+	                    'Aliquam sed nullam'
+	                  ),
+	                  React.createElement(
+	                    'p',
+	                    null,
+	                    'Phasellus convallis elit id ullam corper amet et pulvinar. Duis aliquam turpis mauris, sed ultricies erat dapibus.'
+	                  )
+	                ),
+	                React.createElement(
+	                  'section',
+	                  null,
+	                  React.createElement('span', { className: 'icon major fa-cog' }),
+	                  React.createElement(
+	                    'h3',
+	                    null,
+	                    'Sed erat ullam corper'
+	                  ),
+	                  React.createElement(
+	                    'p',
+	                    null,
+	                    'Phasellus convallis elit id ullam corper amet et pulvinar. Duis aliquam turpis mauris, sed ultricies erat dapibus.'
+	                  )
+	                ),
+	                React.createElement(
+	                  'section',
+	                  null,
+	                  React.createElement('span', { className: 'icon major fa-desktop' }),
+	                  React.createElement(
+	                    'h3',
+	                    null,
+	                    'Veroeros quis lorem'
+	                  ),
+	                  React.createElement(
+	                    'p',
+	                    null,
+	                    'Phasellus convallis elit id ullam corper amet et pulvinar. Duis aliquam turpis mauris, sed ultricies erat dapibus.'
+	                  )
+	                ),
+	                React.createElement(
+	                  'section',
+	                  null,
+	                  React.createElement('span', { className: 'icon major fa-chain' }),
+	                  React.createElement(
+	                    'h3',
+	                    null,
+	                    'Urna quis bibendum'
+	                  ),
+	                  React.createElement(
+	                    'p',
+	                    null,
+	                    'Phasellus convallis elit id ullam corper amet et pulvinar. Duis aliquam turpis mauris, sed ultricies erat dapibus.'
+	                  )
+	                ),
+	                React.createElement(
+	                  'section',
+	                  null,
+	                  React.createElement('span', { className: 'icon major fa-diamond' }),
+	                  React.createElement(
+	                    'h3',
+	                    null,
+	                    'Aliquam urna dapibus'
+	                  ),
+	                  React.createElement(
+	                    'p',
+	                    null,
+	                    'Phasellus convallis elit id ullam corper amet et pulvinar. Duis aliquam turpis mauris, sed ultricies erat dapibus.'
 	                  )
 	                )
 	              ),
 	              React.createElement(
-	                'section',
-	                null,
+	                'ul',
+	                { className: 'actions' },
 	                React.createElement(
-	                  'ul',
-	                  { className: 'contact' },
+	                  'li',
+	                  null,
 	                  React.createElement(
-	                    'li',
-	                    null,
+	                    'a',
+	                    { href: '#', className: 'button' },
+	                    'Learn more'
+	                  )
+	                )
+	              )
+	            )
+	          ),
+	          React.createElement(
+	            'section',
+	            { id: 'three', className: 'wrapper style1 fade-up' },
+	            React.createElement(
+	              'div',
+	              { className: 'inner' },
+	              React.createElement(
+	                'h2',
+	                null,
+	                'Get in touch'
+	              ),
+	              React.createElement(
+	                'p',
+	                null,
+	                'Phasellus convallis elit id ullamcorper pulvinar. Duis aliquam turpis mauris, eu ultricies erat malesuada quis. Aliquam dapibus, lacus eget hendrerit bibendum, urna est aliquam sem, sit amet imperdiet est velit quis lorem.'
+	              ),
+	              React.createElement(
+	                'div',
+	                { className: 'split style1' },
+	                React.createElement(
+	                  'section',
+	                  null,
+	                  React.createElement(
+	                    'form',
+	                    { method: 'post', action: '#' },
 	                    React.createElement(
-	                      'h3',
-	                      null,
-	                      'Address'
+	                      'div',
+	                      { className: 'field half first' },
+	                      React.createElement(
+	                        'label',
+	                        { 'for': 'name' },
+	                        'Name'
+	                      ),
+	                      React.createElement('input', { type: 'text', name: 'name', id: 'name' })
 	                    ),
 	                    React.createElement(
-	                      'span',
-	                      null,
-	                      '12345 Somewhere Road #654',
-	                      React.createElement('br', null),
-	                      'Nashville, TN 00000-0000',
-	                      React.createElement('br', null),
-	                      'USA'
-	                    )
-	                  ),
-	                  React.createElement(
-	                    'li',
-	                    null,
-	                    React.createElement(
-	                      'h3',
-	                      null,
-	                      'Email'
+	                      'div',
+	                      { className: 'field half' },
+	                      React.createElement(
+	                        'label',
+	                        { 'for': 'email' },
+	                        'Email'
+	                      ),
+	                      React.createElement('input', { type: 'text', name: 'email', id: 'email' })
 	                    ),
 	                    React.createElement(
-	                      'a',
-	                      { href: '#' },
-	                      'user@untitled.tld'
-	                    )
-	                  ),
-	                  React.createElement(
-	                    'li',
-	                    null,
-	                    React.createElement(
-	                      'h3',
-	                      null,
-	                      'Phone'
-	                    ),
-	                    React.createElement(
-	                      'span',
-	                      null,
-	                      '(000) 000-0000'
-	                    )
-	                  ),
-	                  React.createElement(
-	                    'li',
-	                    null,
-	                    React.createElement(
-	                      'h3',
-	                      null,
-	                      'Social'
+	                      'div',
+	                      { className: 'field' },
+	                      React.createElement(
+	                        'label',
+	                        { 'for': 'message' },
+	                        'Message'
+	                      ),
+	                      React.createElement('textarea', { name: 'message', id: 'message', rows: '5' })
 	                    ),
 	                    React.createElement(
 	                      'ul',
-	                      { className: 'icons' },
+	                      { className: 'actions' },
 	                      React.createElement(
 	                        'li',
 	                        null,
 	                        React.createElement(
 	                          'a',
-	                          { href: '#', className: 'fa-twitter' },
-	                          React.createElement(
-	                            'span',
-	                            { className: 'label' },
-	                            'Twitter'
-	                          )
+	                          { href: '', className: 'button submit' },
+	                          'Send Message'
 	                        )
+	                      )
+	                    )
+	                  )
+	                ),
+	                React.createElement(
+	                  'section',
+	                  null,
+	                  React.createElement(
+	                    'ul',
+	                    { className: 'contact' },
+	                    React.createElement(
+	                      'li',
+	                      null,
+	                      React.createElement(
+	                        'h3',
+	                        null,
+	                        'Address'
 	                      ),
 	                      React.createElement(
-	                        'li',
+	                        'span',
 	                        null,
-	                        React.createElement(
-	                          'a',
-	                          { href: '#', className: 'fa-facebook' },
-	                          React.createElement(
-	                            'span',
-	                            { className: 'label' },
-	                            'Facebook'
-	                          )
-	                        )
+	                        '12345 Somewhere Road #654',
+	                        React.createElement('br', null),
+	                        'Nashville, TN 00000-0000',
+	                        React.createElement('br', null),
+	                        'USA'
+	                      )
+	                    ),
+	                    React.createElement(
+	                      'li',
+	                      null,
+	                      React.createElement(
+	                        'h3',
+	                        null,
+	                        'Email'
 	                      ),
 	                      React.createElement(
-	                        'li',
+	                        'a',
+	                        { href: '#' },
+	                        'user@untitled.tld'
+	                      )
+	                    ),
+	                    React.createElement(
+	                      'li',
+	                      null,
+	                      React.createElement(
+	                        'h3',
 	                        null,
-	                        React.createElement(
-	                          'a',
-	                          { href: '#', className: 'fa-github' },
-	                          React.createElement(
-	                            'span',
-	                            { className: 'label' },
-	                            'GitHub'
-	                          )
-	                        )
+	                        'Phone'
 	                      ),
 	                      React.createElement(
-	                        'li',
+	                        'span',
 	                        null,
-	                        React.createElement(
-	                          'a',
-	                          { href: '#', className: 'fa-instagram' },
-	                          React.createElement(
-	                            'span',
-	                            { className: 'label' },
-	                            'Instagram'
-	                          )
-	                        )
+	                        '(000) 000-0000'
+	                      )
+	                    ),
+	                    React.createElement(
+	                      'li',
+	                      null,
+	                      React.createElement(
+	                        'h3',
+	                        null,
+	                        'Social'
 	                      ),
 	                      React.createElement(
-	                        'li',
-	                        null,
+	                        'ul',
+	                        { className: 'icons' },
 	                        React.createElement(
-	                          'a',
-	                          { href: '#', className: 'fa-linkedin' },
+	                          'li',
+	                          null,
 	                          React.createElement(
-	                            'span',
-	                            { className: 'label' },
-	                            'LinkedIn'
+	                            'a',
+	                            { href: '#', className: 'fa-twitter' },
+	                            React.createElement(
+	                              'span',
+	                              { className: 'label' },
+	                              'Twitter'
+	                            )
+	                          )
+	                        ),
+	                        React.createElement(
+	                          'li',
+	                          null,
+	                          React.createElement(
+	                            'a',
+	                            { href: '#', className: 'fa-facebook' },
+	                            React.createElement(
+	                              'span',
+	                              { className: 'label' },
+	                              'Facebook'
+	                            )
+	                          )
+	                        ),
+	                        React.createElement(
+	                          'li',
+	                          null,
+	                          React.createElement(
+	                            'a',
+	                            { href: '#', className: 'fa-github' },
+	                            React.createElement(
+	                              'span',
+	                              { className: 'label' },
+	                              'GitHub'
+	                            )
+	                          )
+	                        ),
+	                        React.createElement(
+	                          'li',
+	                          null,
+	                          React.createElement(
+	                            'a',
+	                            { href: '#', className: 'fa-instagram' },
+	                            React.createElement(
+	                              'span',
+	                              { className: 'label' },
+	                              'Instagram'
+	                            )
+	                          )
+	                        ),
+	                        React.createElement(
+	                          'li',
+	                          null,
+	                          React.createElement(
+	                            'a',
+	                            { href: '#', className: 'fa-linkedin' },
+	                            React.createElement(
+	                              'span',
+	                              { className: 'label' },
+	                              'LinkedIn'
+	                            )
 	                          )
 	                        )
 	                      )
@@ -605,38 +622,40 @@
 	              )
 	            )
 	          )
-	        )
-	      ),
-	      React.createElement(
-	        'footer',
-	        { id: 'footer', className: 'wrapper style1-alt' },
+	        ),
 	        React.createElement(
-	          'div',
-	          { className: 'inner' },
+	          'footer',
+	          { id: 'footer', className: 'wrapper style1-alt' },
 	          React.createElement(
-	            'ul',
-	            { className: 'menu' },
+	            'div',
+	            { className: 'inner' },
 	            React.createElement(
-	              'li',
-	              null,
-	              '© Untitled. All rights reserved.'
-	            ),
-	            React.createElement(
-	              'li',
-	              null,
-	              'Design: ',
+	              'ul',
+	              { className: 'menu' },
 	              React.createElement(
-	                'a',
-	                { href: 'http://html5up.net' },
-	                'HTML5 UP'
+	                'li',
+	                null,
+	                '© Untitled. All rights reserved.'
+	              ),
+	              React.createElement(
+	                'li',
+	                null,
+	                'Design: ',
+	                React.createElement(
+	                  'a',
+	                  { href: 'http://html5up.net' },
+	                  'HTML5 UP'
+	                )
 	              )
 	            )
 	          )
 	        )
-	      )
-	    );
-	  }
-	});
+	      );
+	    }
+	  }]);
+	
+	  return UserPageContainer;
+	}(React.Component);
 	
 	ReactDOM.render(React.createElement(UserPageContainer, null), document.getElementById('userPageContainer'));
 
